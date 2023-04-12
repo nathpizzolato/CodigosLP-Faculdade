@@ -30,5 +30,5 @@ if (cond1 && cond2 && cond3){
         console.log(`Tipo: Isosceles.`);
     }
 } else{
-    console.log(`Lados não podem formar um triangulo.`);
+    console.log(`Lados não podem formar um triangulo. `);
 }
