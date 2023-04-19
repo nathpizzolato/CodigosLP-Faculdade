@@ -17,7 +17,6 @@ if (cond1 && cond2 && cond3){
 
     let equi = (ladoA == ladoB && ladoB == ladoC && ladoA == ladoC);
     let esca = (ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC);
-   
     let iso1 = (ladoA == ladoB);
     let iso2 = (ladoA == ladoC);
     let iso3 = (ladoB == ladoC);
@@ -30,5 +29,5 @@ if (cond1 && cond2 && cond3){
         console.log(`Tipo: Isosceles.`);
     }
 } else{
-    console.log(`Lados não podem formar um triangulo. `);
+    console.log(`Lados não podem formar um triangulo.`);
 }
