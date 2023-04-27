@@ -8,8 +8,8 @@ const produto = prompt("Produto: ");
 const valor = Number(prompt("Valor: "));
 
 console.log()
-console.log(`|| OPÇÕES DE PAGAMENTO, PRODUTO: ${produto} ||`);
-console.log("*".repeat(45));
+console.log(`|| OPÇÕES DE PAGAMENTO ||`);
+console.log("*".repeat(20));
 
 let calculo;
 for(let i=1; i<=10; i=i+1){

@@ -1,5 +1,7 @@
 const prompt = require("prompt-sync")()
 
+//mostrar os numeros em linha
+
 const numero = Number(prompt("Informe um numero: "));
 
 console.log();
