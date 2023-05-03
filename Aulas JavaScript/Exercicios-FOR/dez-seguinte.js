@@ -1,3 +1,4 @@
+
 const prompt = require("prompt-sync")()
 
 //programa que leia um numero
