@@ -11,3 +11,8 @@ for(let i=numero; i>=1; i=i-1){
     guarda = guarda + palavra + (i==1 ? "" : " * ");
 }
 console.log(`${guarda}`);
+
+//forma do professor
+//for(let i=1; i<numero; i++){
+//resposta=resposta+palavra+" * "    
+//}console.log(resposta+palavra);

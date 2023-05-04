@@ -12,9 +12,14 @@ console.log("*".repeat(25));
 console.log();
 
 let acumulado = ""
-for(let i=inicio; i<=final; i=i+1){
-    acumulado = acumulado + i + " ";
+if(inicio < final){
+    for(let i=inicio; i<=final; i=i+1){
+        acumulado = acumulado + i + (i==final ? "." : ", "); 
+    }
+}else if(inicio > final){
+    for(let i=inicio; i>=final; i=i-1){
+        acumulado = acumulado + i + (i==final ? "." : ", ");
 }
-
+}
 console.log(`Numeros entre ${inicio} e ${final} (incluindo os mesmos): ${acumulado}`);
 console.log();

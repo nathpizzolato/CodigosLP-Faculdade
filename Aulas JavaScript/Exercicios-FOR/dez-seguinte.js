@@ -11,6 +11,7 @@ console.log();
 let seguinte = ""
 for(let i=numero+1; i<=(numero+10); i=i+1){
     seguinte = seguinte + i + (i==(numero+10) ? "." : ", ");
+    //forma que o prof fez: for(let i=numero+1; i<(numero+10); i++){ seguinte = seguinte+i+", "} resposta=resposta+(numero+10)+"."
 }
 
 console.log(`Numeros seguintes ao ${numero}: ${seguinte} `);

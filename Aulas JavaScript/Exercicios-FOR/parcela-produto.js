@@ -7,9 +7,9 @@ const prompt = require("prompt-sync")()
 const produto = prompt("Produto: ");
 const valor = Number(prompt("Valor: "));
 
-console.log()
-console.log(`|| OPÇÕES DE PAGAMENTO ||`);
-console.log("*".repeat(20));
+console.log();
+console.log(`|| OPÇÕES DE PAGAMENTO: ${produto} ||`);
+console.log();
 
 let calculo;
 for(let i=1; i<=10; i=i+1){
