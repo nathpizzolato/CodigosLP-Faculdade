@@ -9,6 +9,11 @@ console.log();
 
 let guarda="";
 for(let i=numero; i>=1; i--){
-    guarda = guarda + ((i%2 == 0) ? i : " ");
+    if(i%2 == 0){
+        guarda = guarda + i;
+    }else{
+        guarda = guarda + " ";
+    }
+    //guarda = guarda + ((i%2 == 0) ? i : " ");
 }
 console.log(`Pares entre ${numero} e 1: ${guarda}`);
