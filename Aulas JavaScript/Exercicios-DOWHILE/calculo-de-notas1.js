@@ -1,3 +1,4 @@
+//exemplo aula professor.
 const prompt = require("prompt-sync")()
 
 console.log("Programa cálculo de notas");
