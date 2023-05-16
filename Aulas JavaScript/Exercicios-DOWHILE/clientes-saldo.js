@@ -6,30 +6,19 @@ const prompt = require("prompt-sync")()
 
 let negativo = 0;
 let continua;
-let nome;
+
 do{
-    console.log("-".repeat(40));
-    nome = prompt("Nome do cliente ou 'FIM' para sair: ");
-    if(nome == "FIM"){
-        console.log("FINALIZANDO SISTEMA...");
-        console.log("-".repeat(40));
-    }else{
-        const saldo = Number(prompt("Saldo R$: "));
-        console.log("-".repeat(40));
-        console.log();
-        if(saldo < 0 ){
-            negativo = negativo + 1;
-        }
-        continua = prompt("Deseja continuar S/N: ");
-        console.log();
+    const nome = prompt("Nome do cliente: ");
+    const saldo = Number(prompt("Saldo R$: "));
+
+    if(saldo < 0 ){
+        negativo = negativo + 1;
     }
-    
+    continua = prompt("Deseja continuar S/N: ");
 }while(continua == "S")
 
-if(nome == "FIM"){
-    console.log();
+if(negativo == 0){
+    console.log(`Não há clientes com saldo negativo!`);
 }else{
-    console.log("-".repeat(40));
     console.log(`Numero de clientes com saldo negativo: ${negativo}`);
-    console.log("-".repeat(40));
 }

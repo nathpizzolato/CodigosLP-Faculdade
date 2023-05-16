@@ -26,6 +26,7 @@ do{
 
     acumula = acumula + disciplina + " - ";
     continua = prompt("Deseja continua (S/N): ");
+    
 }while(continua == "S")
 
 console.log()
