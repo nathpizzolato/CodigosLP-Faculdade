@@ -11,3 +11,21 @@ while(nome != "FIM"){
         
     }
 }
+let negativo = 0;
+let continua;
+
+do{
+    const nome = prompt("Nome do cliente: ");
+    const saldo = Number(prompt("Saldo R$: "));
+
+    if(saldo < 0 ){
+        negativo = negativo + 1;
+    }
+    continua = prompt("Deseja continuar S/N: ");
+}while(continua == "S")
+
+if(negativo == 0){
+    console.log(`Não há clientes com saldo negativo!`);
+}else{
+    console.log(`Numero de clientes com saldo negativo: ${negativo}`);
+}
