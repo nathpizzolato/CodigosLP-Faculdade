@@ -29,3 +29,4 @@ for(let i = 0; i < produtos.length; i++){
 
 console.log("-".repeat(31));
 console.log(`Total..........R$ ${soma.toFixed(2).padStart(10)}`);
+console.log()
