@@ -4,4 +4,10 @@
 
 const prompt = require("prompt-sync")()
 
-const nome = prompt("Informe o do cliente ou FIM para sair: ");
+const nome = prompt("Informe o nome do cliente ou FIM para sair: ");
+
+while(nome != "FIM"){
+    do{
+        
+    }
+}
