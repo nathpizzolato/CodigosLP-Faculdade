@@ -4,13 +4,6 @@
 
 const prompt = require("prompt-sync")()
 
-const nome = prompt("Informe o nome do cliente ou FIM para sair: ");
-
-while(nome != "FIM"){
-    do{
-        
-    }
-}
 let negativo = 0;
 let continua;
 
