@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")()
 
 //declara 2 vetores: produtos e valores 
-// vetores começam com 0 então se um vetor tem tamanho 5, então suas posiçoes seram 0 1 2 3 4
+// vetores começam com 0 se um vetor tem tamanho 5, então suas posiçoes seram 0 1 2 3 4
 const produtos = [];
 const preco = [];
 let continua;
@@ -24,9 +24,8 @@ console.log("-".repeat(30));
 
 //lenght para descobrir o tamanho do vetor
 for(let i = 0; i < produtos.length; i++){
-    console.log(`${produtos[i].padEnd(20)} ${preco[i].toFixed(2).padStart(20)}`);
+    console.log(`${produtos[i].padEnd(10)} ${preco[i].toFixed(2).padStart(20)}`);
 }
 
 console.log("-".repeat(31));
 console.log(`Total..........R$ ${soma.toFixed(2).padStart(10)}`);
-console.log()
