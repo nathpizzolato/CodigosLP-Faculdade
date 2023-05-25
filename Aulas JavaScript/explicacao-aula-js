@@ -1,6 +1,0 @@
-se colocar 'prompt("pressione enter");' 
-dentro do for ou de uma estrutura de repetição então o programa
-irá esperar a pessoa fazer a ação para continuar
-
-i=i+1 pode ser usado com i++ ou i+=numero
-i=i-1 pode ser usado como i-- ou i-=numero

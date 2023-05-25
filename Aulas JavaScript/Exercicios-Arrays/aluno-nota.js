@@ -3,39 +3,34 @@
 
 const prompt = require("prompt-sync")()
 
-let aprovados = "";
-let reprovados = "";
-const nome = [];
-const nota = [];
+const nomes = [];
+const notas = [];
 
-do{
-    console.log();
-    console.log("Infome o nome do aluno ou FIM para sair !!");
-    console.log();
+console.log("Informe o nome do aluno ou FIM para sair");
 
-    const a = prompt("Aluno: ");
-    const n = Number(prompt("Nota: "));
-
-    nome.push(a);
-    nota.push(n);
-
-}while( !nome.includes("FIM"));
-
-for(let i = 0; i < nome.length; i++){
-    for(let j = 0; j < nota.length; j++){
-        if(nota[j] >= 7 ){
-            aprovados = aprovados + nome[i] + "-" + nota[j] + "|";
-        }else{
-            reprovados = reprovados + nome[i] + "-" + nota[j] + "|";
-        }
+//repete enquanto verdade (para sempre)
+//no caso até encontrar um break que sai do laço de repetição
+while(true){
+    const x = prompt("Nome do Aluno: ");
+    if(x.toUpperCase() == "FIM"){
+        break
     }
-} 
+    const y = Number(prompt("Nota: "));
+    //adiciona nome e nota aos vetores
+    nomes.push(x);
+    notas.push(y);
+}
 
-console.log();
-console.log(`Aprovados`);
-console.log("-".repeat(20));
-console.log(`${aprovados}`);
-console.log();
-console.log(`Reprovados`);
-console.log("-".repeat(20));
-console.log(`${reprovados}`);
+console.log("\nLista dos Alunos Aprovados");
+for(let i=0; i < nomes.length; i++){
+    if(notas[i] >= 7){
+        console.log(`${nomes[i]} - ${notas[i]}`);
+    }
+}
+
+console.log("\nLista de Alunos Reprovados");
+for(let i=0; i < nomes.length; i++){
+    if(notas[i] < 7){
+        console.log(`${nomes[i]} - ${notas[i]}`);
+    }
+}
