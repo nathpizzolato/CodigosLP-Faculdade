@@ -1,3 +1,7 @@
+//Um número é dito “Perfeito” quando é igual a soma dos seus divisores (exceto ele próprio). Elaborar
+//um programa que leia um número, exiba os divisores do número e a soma deles e informe se ele é ou
+//não é um Número Perfeito
+
 const prompt = require("prompt-sync")()
 
 const numero = Number(prompt("Informe um Número: "));
