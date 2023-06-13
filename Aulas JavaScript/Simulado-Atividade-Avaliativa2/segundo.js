@@ -13,7 +13,7 @@ console.log();
 console.log("Previsão para os próximos 5 anos");
 console.log("-".repeat(32));
 
-for(i=1; i<=5; i++){
+for(let i=1; i<=5; i++){
     ano = ano+1;
     func = func*2;
     console.log(`Em ${ano}: ${func} funcionários`);   
