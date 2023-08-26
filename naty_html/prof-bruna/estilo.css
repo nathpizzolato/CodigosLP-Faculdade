@@ -1,0 +1,100 @@
+/*declarando variaveis*/
+:root{
+    --vinho-principal: #8e2424;
+    --cinza-principal: #3a404e;
+    --cinza-texto: #667085;
+    --branco-principal: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em 0; /*em é uma unidade flexivel -  1em = 16px*/
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--cinza-texto);
+    text-transform: capitalize;
+}
+
+.botao{
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.botao-entrar{
+    color: var(--cinza-texto);
+    background-color: transparent;
+}
+
+.botao-cadastrar{
+    border-radius: 10px;
+    background-color: var(--vinho-principal);
+    color: var(--branco-principal);
+}
+
+/*corpo do site*/
+
+.secao__sobre{
+    display: flex;
+    flex-direction: column; /*modifica a direçao do flex*/
+    align-items: center;
+    gap: 1.5em; /*da espaçamento entre os elementos do flex*/
+    margin: 2em 0;
+}
+
+.secao__titulo{
+    color: var(--vinho-principal);
+    font-size: 1em;
+}
+
+.secao__titulosecundario{
+    color: var(--cinza-principal);
+    font-size: 2em;
+}
+
+.secao__texto{
+    width: 40%;
+    text-align: center;
+    line-height: 1.5; /*altera o espaçamento entre linhas*/
+    color:  var(--cinza-texto);
+}
+
+.metricas__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.metricas__destaque{
+    color: var(--vinho-principal);
+    font-size: 3.5em;
+}
+
+.metricas__titulo{
+    color: var(--cinza-principal);
+    font-size: 1.2em;
+}
+
+.metricas__texto{
+    font-size: 1em;
+    color: var(--cinza-texto);
+}
+
+.metricas__container--item{
+    display: flex;
+    flex-direction:column;
+    gap: .5em;
+}
