@@ -1,0 +1,132 @@
+/*declarando variaveis*/
+:root {
+    --titulo_principal: #6d3304;
+    --texto_principal: #ad662c;
+    --titulo: #2c2d30;
+    --texto_comfundo: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.container_menu {
+    display: flex;
+    background-color: var(--titulo_principal);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /*em é uma unidade flexivel -  1em = 16px*/
+}
+
+.img_logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--texto_comfundo);
+    font-style: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*corpo do site*/
+
+.secao__historia {
+    display: flex;
+    flex-direction: column;
+    /*modifica a direçao do flex*/
+    align-items: center;
+    gap: 1em;
+    /*da espaçamento entre os elementos do flex*/
+    margin: 1.5em 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.secao__titulo {
+    color: var(--titulo_principal);
+    font-size: 2em;
+}
+
+.secao__titulosecundario {
+    color: var(--texto_principal);
+    font-size: 1.3em;
+}
+
+.secao__texto {
+    width: 55%;
+    background-color: var(--titulo_principal);
+    text-align: center;
+    line-height: 1.5;
+    /*altera o espaçamento entre linhas*/
+    color: var(--texto_comfundo);
+}
+
+.imagem_pagina {
+    margin-left: 33em;
+}
+
+.secao__categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.secao__destaque {
+    color: var(--titulo_principal);
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.secao__titulodois {
+    color: var(--texto_principal);
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+
+.secao__textodois {
+    font-size: 1em;
+    color: var(--texto_comfundo);
+    background-color: var(--titulo_principal);
+}
+
+.secao__categorias--provas {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imagem_premios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5em;
+    gap: 1em;
+}
+
+.secao__titulotres {
+    color: var(--titulo_principal);
+    font-size: 2.5em;
+}
+
+.container_rodape {
+    display: flex;
+    background-color: var(--titulo_principal);
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    /*em é uma unidade flexivel -  1em = 16px*/
+    color: var(--texto_comfundo);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
