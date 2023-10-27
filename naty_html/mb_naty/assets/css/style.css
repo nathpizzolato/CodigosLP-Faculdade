@@ -1,0 +1,146 @@
+:root {
+  --fundo: #23262f;
+  --verde-principal: #27272e;
+  --verde-texto: #425466;
+  --texto-fundo: #7a828a;
+  --input-fundo: #edf2f7;
+  --verde-botao: #141416;
+  --verde-contas: #718096;
+  --branco: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background-color: var(--fundo);
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  background-color: var(--fundo);
+  color: var(--branco);
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0.5em 1.5em;
+  max-width: 37.5em;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+}
+.cabecalho__logo {
+  width: 6.25em;
+}
+.cabecalho__titulo {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.cabecalho__texto {
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  gap: 1.5em;
+  max-width: 37.5em;
+  font-family: "Inter", sans-serif;
+}
+
+.login__input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  max-width: 37.5;
+}
+
+.login__titulo {
+  color: var(--verde-principal);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.login__texto {
+  color: var(--verde-principal);
+  font-size: 1em;
+}
+.login__descricao {
+  color: var(--verde-texto);
+  font-size: 1em;
+}
+.login__campo {
+  color: var(--texto-fundo);
+  background-color: #edf2f7;
+  border: none;
+  border-radius: 6px;
+  padding: 1.5em;
+  font-size: 1em;
+}
+.login__link {
+  text-align: end;
+  font-size: 0.75em;
+  color: var(--verde-principal);
+}
+
+.login__botao {
+  padding: 1em;
+  border: none;
+  background-color: var(--verde-botao);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 1em;
+  margin-top: 2em;
+}
+.redes__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.login__container {
+  display: flex;
+  gap: 2em;
+}
+
+.login__destaque {
+  color: var(--verde-principal);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    height: 100vh;
+  }
+
+  body {
+    display: flex;
+    height: 100vh;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    width: 26.5em;
+  }
+}
